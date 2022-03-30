@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="./assets/style.css">
     <title>Rock-Paper-Scissors</title>
 </head>
+
 <body>
     <h1>Rock Paper Scissors!</h1>
     <div class="content-block">
@@ -21,19 +23,33 @@
         </div>
     </div>
 
-    <div id="arena">
-        <div id="user" class="arena-block"></div>
-        <div id="comp" class="arena-block"></div>
+    <div class="content-block">
+        <div class="block">
+            <div class="player">User</div>
+            <div class="vs">vs</div>
+            <div class="player">Comp</div>
+        </div>
     </div>
+
+    <div class="content-block">
+        <div class="block">
+            <div id="user" class="arena-block"></div>
+            <div id="comp" class="arena-block"></div>
+        </div>
+    </div>
+
+    <div id="wl">WIN/LOSE!</div>
 
     <div class="content-block">
         <h2 class="subheading"></h2>
         <div class="block">
-            <div id="user-score">User <span>0</span></div>
-            <div id="comp-score"><span>0</span> Computer</div>
+            <div id="user-score">User </div>
+            <div class="blocktwo" id="score">0:0</div>
+            <div id="comp-score"> Comp</div>
         </div>
     </div>
 
-<script src="./assets/style.js"></script>    
+    <script src="./assets/style.js"></script>
 </body>
+
 </html>

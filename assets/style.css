@@ -14,19 +14,22 @@ body {
 h1 {
     text-align: center;
     margin: 0 auto;
+    padding-top: 1%;
+    font-size: calc(26px + (32 - 26) * ((100vw - 300px) / (1440 - 300)));
 
 }
 
 .content-block {
-    max-width: 80%;
+    max-width: 85%;
     margin: 0 auto;
     padding: 1rem;
-    margin-top: 40px;
+    margin-top: 20px;
 
 }
 
 .subheading {
     text-align: center;
+    font-size: calc(22px + (32 - 22) * ((100vw - 300px) / (1440 - 300)));
 }
 
 .block {
@@ -37,10 +40,64 @@ h1 {
     flex-basis: 100%;
 }
 
+.blocktwo {
+    display: flex;
+    flex-basis: 10%;
+    text-align: center;
+    padding-top: 1%;
+    border: 2px solid black;
+    font-size: 1.7rem;
+    background: #fff;
+
+}
+
 .item {
     background: lightgreen;
     border: 3px solid black;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.7rem;
 }
 
+.player {
+    background: lightgreen;
+    border: 3px solid black;
+    text-align: center;
+    font-size: 1.8rem;
+
+}
+.vs {
+    background: lightgreen;
+    border: 3px solid black;
+    text-align: center;
+    max-width: 10%;
+    padding-top: 3%;
+
+}
+
+.arena-block {
+    background-color: lightgreen;
+    border: 3px solid black;
+    text-align: center;
+    height: 25vh;
+}
+
+#wl {
+    max-width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    color: red;
+    text-align: center;
+    font-size: 20px;
+    border: 3px solid black;
+    height: 5vh;
+    padding-top: 4.5%;
+}
+
+#user-score, #comp-score {
+    flex-basis: 80%;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    padding-top: 1%;
+    background: lightskyblue;
+}
