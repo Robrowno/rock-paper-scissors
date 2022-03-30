@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: aquamarine;
+    background-image: radial-gradient(circle, #fdbb2d 0%, orange 30%, aquamarine 80%); 
 }
 
 h1 {
@@ -100,4 +100,51 @@ h1 {
     border: 2px solid black;
     padding-top: 1%;
     background: lightskyblue;
+}
+
+#reset {
+    width: 110px;
+    height: 70px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 30%;
+    border: 1px solid black;
+    color: black;
+    font-size: 30px;
+    bottom: 15px;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+
+@media screen and (min-width: 425px) {
+    .vs {
+        padding-top: 1.5%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+
+    .blocktwo {
+        flex-basis: 5%;
+    }
+
+    .vs {
+        padding-top: 1%;
+    }
+
+    #wl {
+        padding-top: 2%;
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+    .vs {
+        padding-top: 0.5%;
+    }
 }
