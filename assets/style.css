@@ -1,5 +1,7 @@
+/*-- Fonts Import url --*/
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Roboto:wght@300&family=Varela+Round&display=swap');
 
+/*-- Page and Body generic styling --*/
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +13,7 @@ body {
     background-image: radial-gradient(circle, #fdbb2d 0%, orange 30%, aquamarine 80%); 
 }
 
-/* Home Page Styling Section */
-
+/*-- Home Page Styling Section --*/
 #home-h {
     padding-bottom: 40px;
 }
@@ -62,9 +63,9 @@ input {
 .hide {
     display: none;
 }
+/*-- End of Home Page section styling--*/
 
-/* Main Game Section Styling */
-
+/*-- Main Game Section Styling --*/
 h1 {
     text-align: center;
     margin: 0 auto;
@@ -73,6 +74,7 @@ h1 {
 
 }
 
+/*-- General Block styling */
 .content-block {
     max-width: 85%;
     margin: 0 auto;
@@ -81,11 +83,13 @@ h1 {
 
 }
 
+/*-- "Choose Your Weapon!" Subheading */
 .subheading {
     text-align: center;
     font-size: calc(22px + (32 - 22) * ((100vw - 300px) / (1440 - 300)));
 }
 
+/*-- General Block styling expanded--*/
 .block {
     display: flex;
 }
@@ -112,12 +116,12 @@ h1 {
     font-size: 2.7rem;
 }
 
+/* Player/Computer display bar */
 .player {
     background: lightgreen;
     border: 3px solid black;
     text-align: center;
     font-size: 1.8rem;
-
 }
 .vs {
     background: lightgreen;
@@ -125,9 +129,9 @@ h1 {
     text-align: center;
     max-width: 10%;
     padding-top: 3%;
-
 }
 
+/* 'Arena styling */
 .arena-block {
     background-color: lightgreen;
     border: 3px solid black;
@@ -135,6 +139,7 @@ h1 {
     height: 25vh;
 }
 
+/*-- WIN/LOSE message --*/
 #wl {
     max-width: 80%;
     margin: 0 auto;
@@ -147,6 +152,7 @@ h1 {
     padding-top: 4.5%;
 }
 
+/*-- Score Board --*/
 #user-score, #comp-score {
     flex-basis: 80%;
     text-align: center;
@@ -156,6 +162,7 @@ h1 {
     background: lightskyblue;
 }
 
+/*-- Green Reset button (div) --*/
 #reset {
     width: 110px;
     height: 70px;
@@ -171,8 +178,14 @@ h1 {
     bottom: 15px;
     margin: auto;
     margin-top: 10px;
-    
 }
+
+/*-- Call this class to hide main game page --*/
+.hidetwo {
+    display: none;
+}
+
+/*-- Media Query section --*/
 
 @media screen and (min-width: 425px) {
     .vs {
@@ -185,7 +198,6 @@ h1 {
     .img {
         width: 50%;
     }
-
 
     .blocktwo {
         flex-basis: 5%;
@@ -205,5 +217,5 @@ h1 {
     .vs {
         padding-top: 0.5%;
     }
-
 } 
+/* End of Media Query Section */
