@@ -11,6 +11,60 @@ body {
     background-image: radial-gradient(circle, #fdbb2d 0%, orange 30%, aquamarine 80%); 
 }
 
+/* Home Page Styling Section */
+
+#home-h {
+    padding-bottom: 40px;
+}
+.home-p {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 70vw;
+    padding: 5px;
+
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#div-input {
+    padding: 1%;
+    margin-bottom: 5px;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    
+}
+
+#start-game {
+    width: 110px;
+    height: 70px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 30%;
+    border: 1px solid black;
+    color: black;
+    font-size: 30px;
+    bottom: 20px;
+    margin: auto;
+}
+
+.hide {
+    display: none;
+}
+
+/* Main Game Section Styling */
+
 h1 {
     text-align: center;
     margin: 0 auto;
@@ -128,6 +182,10 @@ h1 {
 
 @media screen and (min-width: 768px) {
 
+    .img {
+        width: 50%;
+    }
+
 
     .blocktwo {
         flex-basis: 5%;
@@ -138,7 +196,7 @@ h1 {
     }
 
     #wl {
-        padding-top: 2%;
+        padding-top: 1.5%;
     }
     
 }
@@ -147,4 +205,5 @@ h1 {
     .vs {
         padding-top: 0.5%;
     }
-}
+
+} 
