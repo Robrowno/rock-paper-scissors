@@ -58,11 +58,13 @@ input {
     font-size: 30px;
     bottom: 20px;
     margin: auto;
+    cursor: pointer;
 }
-
-.hide {
+/*-- This hides the page --*/
+#start-page {
     display: none;
 }
+
 /*-- End of Home Page section styling--*/
 
 /*-- Main Game Section Styling --*/
@@ -114,6 +116,7 @@ h1 {
     border: 3px solid black;
     text-align: center;
     font-size: 2.7rem;
+    cursor: pointer;
 }
 
 /* Player/Computer display bar */
@@ -178,10 +181,11 @@ h1 {
     bottom: 15px;
     margin: auto;
     margin-top: 10px;
+    cursor: pointer;
 }
 
-/*-- Call this class to hide main game page --*/
-.hidetwo {
+/*-- This hides the Game page until called on by JS --*/
+#main {
     display: none;
 }
 

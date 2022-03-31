@@ -1,14 +1,17 @@
 
+let homePage = document.getElementById('start-page');
+homePage.style.display = 'initial';
 
-function displayUsername()
+let gamePage = document.getElementById('main');
 
-function pickRock()
+if (homePage) {
+    gamePage.style.display = 'none';
+}
 
-function pickPaper()
+function beginGame(e) {
+    gamePage.style.display = 'initial';
+    homePage.style.display = 'none';
+}
 
-function pickScissors()
-
-function countScore()
-
-function resetGame()
-
+let startGame = document.getElementById('start-game');
+startGame.addEventListener('click', beginGame);
