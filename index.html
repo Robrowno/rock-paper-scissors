@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div id="start-page" >
+    <div id="start-page">
         <h1 id="home-h">Rock Paper Scissors! </h1>
         <p class="home-p">Welcome to my Rock Paper Scissors Javascript game! <br>
             Before we play, let's make sure you know the rules:
@@ -23,54 +23,56 @@
             <p class="home-p">In short, Rock beats Scissors, Paper beats Rock and Scissors beats paper. A score will be
                 tallied for you at the bottom of the screen, keeping track as you play against the computer.
             </p>
-            <img src="assets/images/rock-paper-scissors-game-rules.png" alt="Rules of Rock, Paper, Scissors - demonstrated with drawings of a clenched fist, open palm and peace sign.">
+            <img src="assets/images/rock-paper-scissors-game-rules.png"
+                alt="Rules of Rock, Paper, Scissors - demonstrated with drawings of a clenched fist, open palm and peace sign.">
             <p class="home-p">Please display a username before we begin:</p>
             <div id="div-input">
-                <input id="u-name" type="text" maxlength="15" placeholder="Please enter your name here!" required>
+                <input id="u-name" type="text" maxlength="15" placeholder="Please enter your name here!"
+                    name="username">
                 <input id="submit" type="submit" value="submit">
             </div>
             <div id="start-game">Start!</div>
     </div>
 
     <main id="main">
-    <h1>Rock Paper Scissors!</h1>
-    <div class="content-block">
-        <h2 class="subheading"> Choose Your Weapon!</h2>
-        <div class="block">
-            <div class="item">🤜</div>
-            <div class="item">✋</div>
-            <div class="item">✌️</div>
+        <h1>Rock Paper Scissors!</h1>
+        <div class="content-block">
+            <h2 class="subheading"> Choose Your Weapon!</h2>
+            <div class="block">
+                <div class="item">🤜</div>
+                <div class="item">✋</div>
+                <div class="item">✌️</div>
+            </div>
         </div>
-    </div>
 
-    <div class="content-block">
-        <div class="block">
-            <div class="player">User</div>
-            <div class="vs">vs</div>
-            <div class="player">Comp</div>
+        <div class="content-block">
+            <div class="block">
+                <div id="username" class="player">User</div>
+                <div class="vs">vs</div>
+                <div class="player">Comp</div>
+            </div>
         </div>
-    </div>
 
-    <div class="content-block">
-        <div class="block">
-            <div id="user" class="arena-block"></div>
-            <div id="comp" class="arena-block"></div>
+        <div class="content-block">
+            <div class="block">
+                <div id="user" class="arena-block"></div>
+                <div id="comp" class="arena-block"></div>
+            </div>
         </div>
-    </div>
 
-    <div id="wl">WIN/LOSE!</div>
+        <div id="wl">WIN/LOSE!</div>
 
-    <div class="content-block">
-        <h2 class="subheading"></h2>
-        <div class="block">
-            <div id="user-score">User </div>
-            <div class="blocktwo" id="score"><span id="u-score">0</span>:<span id="c-score">0</span></div>
-            <div id="comp-score"> Comp</div>
+        <div class="content-block">
+            <h2 class="subheading"></h2>
+            <div class="block">
+                <div id="user-score">User </div>
+                <div class="blocktwo" id="score"><span id="u-score">0</span>:<span id="c-score">0</span></div>
+                <div id="comp-score"> Comp</div>
+            </div>
         </div>
-    </div>
 
-    <div id="reset">Reset</div>
-</main>
+        <div id="reset">Reset</div>
+    </main>
 
 
     <script src="./assets/style.js"></script>

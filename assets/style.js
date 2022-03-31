@@ -15,3 +15,4 @@ function beginGame(e) {
 
 let startGame = document.getElementById('start-game');
 startGame.addEventListener('click', beginGame);
+
