@@ -37,7 +37,7 @@ let chooseRock = rockItm.addEventListener('click', selectRock);
 function selectRock() {
     let rock = document.getElementById('user')
     rock.innerHTML = '🤜';
-    rock.classList.add('displayrock');
+    rock.classList.add('displayplayerchoice');
 
     console.log('This is rock');
 
@@ -45,20 +45,29 @@ function selectRock() {
 
 
 //When player selects Paper
-let choosePaper = paperItm.addEventListener('click', testEventTwo);
+let choosePaper = paperItm.addEventListener('click', selectPaper);
 
-function testEventTwo() {
+function selectPaper() {
+    let paper = document.getElementById('user')
+    paper.innerHTML = '✋';
+    paper.classList.add('displayplayerchoice');
+
     console.log('This is paper');
+
 }
 
 
 //When player selects Scissors 
-let chooseScissors = scissorsItm.addEventListener('click', testEventThree);
+let chooseScissors = scissorsItm.addEventListener('click', selectScissors);
 
-function testEventThree() {
+function selectScissors() {
+    let scissors = document.getElementById('user')
+    scissors.innerHTML = '✌️';
+    scissors.classList.add('displayplayerchoice');
+
     console.log('This is scissors');
-}
 
+}
 
 
 //Sequence when player wins or loses
