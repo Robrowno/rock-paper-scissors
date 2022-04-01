@@ -27,7 +27,7 @@ let rockItm = document.getElementById('rock');
 let paperItm = document.getElementById('paper');
 let scissorsItm = document.getElementById('scissors');
 let playerChoice = [rockItm, paperItm, scissorsItm];
-let computerChoice = ['rock', 'paper', 'scissors'];
+let computerChoice;
 
 
 
@@ -40,6 +40,7 @@ function selectRock() {
     rock.classList.add('displayplayerchoice');
 
     console.log('This is rock');
+    generateCompChoice();
 
 }
 //When player selects Paper
@@ -51,7 +52,7 @@ function selectPaper() {
     paper.classList.add('displayplayerchoice');
 
     console.log('This is paper');
-
+    generateCompChoice();
 }
 //When player selects Scissors 
 let chooseScissors = scissorsItm.addEventListener('click', selectScissors);
@@ -62,14 +63,25 @@ function selectScissors() {
     scissors.classList.add('displayplayerchoice');
 
     console.log('This is scissors');
-
+    generateCompChoice();
 }
 
 
 
 function generateCompChoice() {
-    let randomComputerNumber = Math.floor(Math.random() * computerChoice.length) + 1;
+    let randomComputerNumber = Math.floor(Math.random() * 3) + 1;
     console.log(randomComputerNumber);
+
+    if (randomComputerNumber === 1) {
+        computerChoice = '🤜';
+    } else if (randomComputerNumber === 2) {
+        computerChoice = '✋';
+    } else if (randomComputerNumber === 3) {
+        computerChoice = '✌️';
+    
+    }
+    let computerFinalDisplay = document.getElementById('comp');
+    computerFinalDisplay.innerHTML = computerChoice;
 }; 
 
 //Sequence when player wins or loses
