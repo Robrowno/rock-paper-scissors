@@ -1,9 +1,4 @@
-//Game logic
 
-let gameScore = () => {
-    let playerScore = 0;
-    let computerScore = 0;
-}
 //Website opens on startpage 
 let homePage = document.getElementById('start-page');
 homePage.style.display = 'initial';
@@ -37,10 +32,15 @@ let computerChoice = ['rock', 'paper', 'scissors'];
 
 
 //When player selects Rock
-let chooseRock = rockItm.addEventListener('click', testEvent);
+let chooseRock = rockItm.addEventListener('click', selectRock);
 
-function testEvent() {
+function selectRock() {
+    let rock = document.getElementById('user')
+    rock.innerHTML = '🤜';
+    rock.classList.add('displayrock');
+
     console.log('This is rock');
+
 }
 
 
@@ -61,11 +61,31 @@ function testEventThree() {
 
 
 
-
 //Sequence when player wins or loses
-
+//let winner = x;
+//let loser = i;
 
 //Score tallies.
+//let playerScore;
+//let computerScore;
+
+//let gameScore = () => {
+  //  let playerScore = 0;
+  //  let computerScore = 0;
+
+  //  if (x > i) {
+
+  ///     let playerScore = new playerScore;
+  //      new playerScore = ++playerScore;
+  //  } else {
+  //      let computerScore = new compScore;
+  //      new compScore = ++computerScore;
+  //  }
+
+
+//}
 
 
 //Reset scoreboard 
+
+//let resetButton;
