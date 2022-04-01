@@ -140,12 +140,12 @@ h1 {
     border: 3px solid black;
     text-align: center;
     height: 25vh;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .displayplayerchoice {
-    display: block;
-    align-self: center;
     font-size: 3.5rem;
     
 }

@@ -13,7 +13,7 @@ if (homePage) {
 
 
 
-// Game page begins on start button
+// Gamepage begins on start button
 function beginGame(e) {
     gamePage.style.display = 'initial';
     homePage.style.display = 'none';
@@ -42,8 +42,6 @@ function selectRock() {
     console.log('This is rock');
 
 }
-
-
 //When player selects Paper
 let choosePaper = paperItm.addEventListener('click', selectPaper);
 
@@ -55,8 +53,6 @@ function selectPaper() {
     console.log('This is paper');
 
 }
-
-
 //When player selects Scissors 
 let chooseScissors = scissorsItm.addEventListener('click', selectScissors);
 
@@ -69,6 +65,12 @@ function selectScissors() {
 
 }
 
+
+
+function generateCompChoice() {
+    let randomComputerNumber = Math.floor(Math.random() * computerChoice.length) + 1;
+    console.log(randomComputerNumber);
+}; 
 
 //Sequence when player wins or loses
 //let winner = x;
