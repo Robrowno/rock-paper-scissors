@@ -85,12 +85,24 @@ function generateCompChoice() {
     let computerFinalDisplay = document.getElementById('comp');
     computerFinalDisplay.classList.add('displayplayerchoice')
     computerFinalDisplay.innerHTML = computerChoice;
+    revealResult();
 }; 
 
 
 
 //Sequence when player wins, loses or draws
+function revealResult() {
+    if (computerChoice === selectRock || selectPaper || selectScissors) {
+        banner.style.display = 'initial';
+        banner.classList.add('wl');
+        banner.innerText = 'DRAW';
+    } else if (computerChoice === '🤜' && selectScissors === '✌️') {
+        banner.style.display = 'initial';
+        banner.classList.add('wl');
+        banner.innerText = 'YOU LOSE';
 
+    }
+}
 
 
 
