@@ -13,10 +13,12 @@ if (homePage) {
 
 
 
-// Gamepage begins on start button
+// Gamepage begins on start button and win/lose banner is hidden
 function beginGame(e) {
     gamePage.style.display = 'initial';
     homePage.style.display = 'none';
+    banner.style.display = 'none';
+     
 }
 let startGame = document.getElementById('start-game');
 startGame.addEventListener('click', beginGame);
@@ -28,6 +30,7 @@ let paperItm = document.getElementById('paper');
 let scissorsItm = document.getElementById('scissors');
 let playerChoice = [rockItm, paperItm, scissorsItm];
 let computerChoice;
+let banner = document.getElementById('wl');
 
 
 
@@ -67,7 +70,6 @@ function selectScissors() {
 }
 
 
-
 function generateCompChoice() {
     let randomComputerNumber = Math.floor(Math.random() * 3) + 1;
     console.log(randomComputerNumber);
@@ -81,34 +83,19 @@ function generateCompChoice() {
     
     }
     let computerFinalDisplay = document.getElementById('comp');
+    computerFinalDisplay.classList.add('displayplayerchoice')
     computerFinalDisplay.innerHTML = computerChoice;
 }; 
 
-//Sequence when player wins or loses
-//let winner = x;
-//let loser = i;
-
-//Score tallies.
-//let playerScore;
-//let computerScore;
-
-//let gameScore = () => {
-  //  let playerScore = 0;
-  //  let computerScore = 0;
-
-  //  if (x > i) {
-
-  ///     let playerScore = new playerScore;
-  //      new playerScore = ++playerScore;
-  //  } else {
-  //      let computerScore = new compScore;
-  //      new compScore = ++computerScore;
-  //  }
 
 
-//}
+//Sequence when player wins, loses or draws
+
+
+
+
 
 
 //Reset scoreboard 
 
-//let resetButton;
+let resetButton = getElementById('reset');
