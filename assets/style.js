@@ -91,19 +91,14 @@ function generateCompChoice() {
 
 
 //Sequence when player wins, loses or draws
-function revealResult() {
+/*function revealResult() {
     if (computerChoice === selectRock || selectPaper || selectScissors) {
-        banner.style.display = 'initial';
-        banner.classList.add('wl');
+        banner.style.display = 'unset';
         banner.innerText = 'DRAW';
-    } else if (computerChoice === '🤜' && selectScissors === '✌️') {
-        banner.style.display = 'initial';
-        banner.classList.add('wl');
-        banner.innerText = 'YOU LOSE';
-
+   
     }
 }
-
+*/
 
 
 
