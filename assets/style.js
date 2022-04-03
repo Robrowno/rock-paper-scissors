@@ -13,6 +13,7 @@ if (homePage) {
 
 
 
+
 // Gamepage begins on start button and win/lose banner is hidden
 function beginGame(e) {
     gamePage.style.display = 'initial';
@@ -100,9 +101,20 @@ function generateCompChoice() {
 }
 */
 
+let scoreboard = document.getElementById('score');
+let playerScore = document.getElementById('u-score');
+let computerScore = document.getElementById('c-score');
 
 
+function updateScoreBoard() {
+
+}
 
 //Reset scoreboard 
 
 let resetButton = getElementById('reset');
+reset.addEventListener('click', reset);
+
+function reset() {
+    
+}

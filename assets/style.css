@@ -100,17 +100,6 @@ h1 {
     flex-basis: 100%;
 }
 
-.blocktwo {
-    display: flex;
-    flex-basis: 10%;
-    text-align: center;
-    padding-top: 1%;
-    border: 2px solid black;
-    font-size: 1.7rem;
-    background: #fff;
-
-}
-
 .item {
     background: lightgreen;
     border: 3px solid black;
@@ -166,11 +155,24 @@ h1 {
 /*-- Score Board --*/
 #user-score, #comp-score {
     flex-basis: 80%;
+    justify-content: center;
     text-align: center;
     font-size: 1.5rem;
     border: 2px solid black;
     padding-top: 1%;
     background: lightskyblue;
+}
+
+.blocktwo {
+    display: flex;
+    max-width: 60px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1%;
+    border: 2px solid black;
+    font-size: 1.7rem;
+    background: #fff;
+
 }
 
 /*-- Green Reset button (div) --*/
@@ -209,10 +211,6 @@ h1 {
 
     .img {
         width: 50%;
-    }
-
-    .blocktwo {
-        flex-basis: 5%;
     }
 
     .vs {
