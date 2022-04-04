@@ -74,7 +74,6 @@ function selectScissors() {
     generateCompChoice();
 }
 
-
 function generateCompChoice() {
     let randomComputerNumber = Math.floor(Math.random() * 3) + 1;
     console.log(randomComputerNumber);
@@ -96,15 +95,6 @@ function generateCompChoice() {
 
 
 //Sequence when player wins, loses or draws
-/*function revealResult() {
-    if (computerChoice === selectRock || selectPaper || selectScissors) {
-        banner.style.display = 'unset';
-        banner.innerText = 'DRAW';
-   
-    }
-}
-*/
-
 
 function revealResult(computerFinalDisplay) {
     if ((computerFinalDisplay == '🤜' && playerChoice[0]) || (computerFinalDisplay == '✋' && playerChoice[1]) || (computerFinalDisplay == '✌️' && playerChoice[2])) {
