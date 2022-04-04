@@ -86,7 +86,7 @@ function generateCompChoice() {
     let computerFinalDisplay = document.getElementById('comp');
     computerFinalDisplay.classList.add('displayplayerchoice')
     computerFinalDisplay.innerHTML = computerChoice;
-    revealResult();
+    revealResult(computerFinalDisplay);
 }; 
 
 
@@ -102,9 +102,11 @@ function generateCompChoice() {
 */
 
 
-function revealResult() {
-    if (computerFinalDisplay = '🤜' && playerChoice[0]) {
+function revealResult(computerFinalDisplay) {
+    if ((computerFinalDisplay == '🤜' && playerChoice[0]) || (computerFinalDisplay == '✋' && playerChoice[1]) || (computerFinalDisplay == '✌️' && playerChoice[2])) {
         console.log('Draw!');
+    } else {
+        console.log('Not a draw!')
     }
 }
 
