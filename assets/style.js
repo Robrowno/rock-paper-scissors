@@ -29,8 +29,12 @@ startGame.addEventListener('click', beginGame);
 let rockItm = document.getElementById('rock');
 let paperItm = document.getElementById('paper');
 let scissorsItm = document.getElementById('scissors');
-let playerChoice = [rockItm, paperItm, scissorsItm];
+
+let playerChoice = [rockItm, paperItm, scissorsItm]; 
+
+/* let playerChoice = ['🤜', '✋', '✌️']; */
 let computerChoice;
+
 let banner = document.getElementById('wl');
 
 
@@ -106,7 +110,7 @@ function revealResult(computerFinalDisplay) {
     if ((computerFinalDisplay == '🤜' && playerChoice[0]) || (computerFinalDisplay == '✋' && playerChoice[1]) || (computerFinalDisplay == '✌️' && playerChoice[2])) {
         console.log('Draw!');
     } else {
-        console.log('Not a draw!')
+        console.log('Not a draw!');
     }
 }
 
