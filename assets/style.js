@@ -101,6 +101,13 @@ function generateCompChoice() {
 }
 */
 
+
+function revealResult() {
+    if (computerFinalDisplay = '🤜' && playerChoice[0]) {
+        console.log('Draw!');
+    }
+}
+
 let scoreboard = document.getElementById('score');
 let playerScore = document.getElementById('u-score');
 let computerScore = document.getElementById('c-score');
@@ -112,9 +119,9 @@ function updateScoreBoard() {
 
 //Reset scoreboard 
 
-let resetButton = getElementById('reset');
-reset.addEventListener('click', reset);
+/*let resetButton = getElementById('reset');
+resetButton.addEventListener('click', reset);
 
 function reset() {
     
-}
+} */
