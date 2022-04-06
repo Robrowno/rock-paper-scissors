@@ -29,34 +29,57 @@ startGame.addEventListener('click', beginGame);
 let rockItm = document.getElementById('rock');
 let paperItm = document.getElementById('paper');
 let scissorsItm = document.getElementById('scissors');
+/* let playerArena = document.getElementById('user'); */
 
 let playerChoice = [rockItm, paperItm, scissorsItm]; 
 
-/* let playerChoice = ['🤜', '✋', '✌️']; */
+let choices = ['🤜', '✋', '✌️'];
 let computerChoice;
 
 let banner = document.getElementById('wl');
 
 
+/*
+let items = document.getElementsByClassName('items')
+
+items.forEach((item) => {
+    item.addEventListener("click", function(displayplayerchoice) {
+        if (rockItm) {
+            playerArena.innerHTML = choices[0]
+            playerArena.classList.add('displayplayerchoice')
+        } else if (paperItm) {
+            playerArena.innerHTML = choices[1]
+            playerArena.classList.add('displayplayerchoice')
+        } else if (scissorsItm) {
+            playerArena.innerHTML = choices[2]
+            playerArena.classList.add('displayplayerchoice')
+        } 
+        generateCompChoice()
+
+    });
+  }); */
+
+
 
 //When player selects Rock
 let chooseRock = rockItm.addEventListener('click', selectRock);
+let rock = document.getElementById('user')
 
 function selectRock() {
-    let rock = document.getElementById('user')
-    rock.innerHTML = '🤜';
+    rock.innerHTML = choices[0];
     rock.classList.add('displayplayerchoice');
 
     console.log('This is rock');
     generateCompChoice();
 
-}
+} 
+
 //When player selects Paper
 let choosePaper = paperItm.addEventListener('click', selectPaper);
+let paper = document.getElementById('user')
 
 function selectPaper() {
-    let paper = document.getElementById('user')
-    paper.innerHTML = '✋';
+    paper.innerHTML = choices[1];
     paper.classList.add('displayplayerchoice');
 
     console.log('This is paper');
@@ -64,26 +87,26 @@ function selectPaper() {
 }
 //When player selects Scissors 
 let chooseScissors = scissorsItm.addEventListener('click', selectScissors);
+let scissors = document.getElementById('user')
 
 function selectScissors() {
-    let scissors = document.getElementById('user')
-    scissors.innerHTML = '✌️';
+    scissors.innerHTML = choices[2];
     scissors.classList.add('displayplayerchoice');
 
     console.log('This is scissors');
     generateCompChoice();
-}
+} 
 
 function generateCompChoice() {
     let randomComputerNumber = Math.floor(Math.random() * 3) + 1;
     console.log(randomComputerNumber);
 
     if (randomComputerNumber === 1) {
-        computerChoice = '🤜';
+        computerChoice = choices[0];
     } else if (randomComputerNumber === 2) {
-        computerChoice = '✋';
+        computerChoice = choices[1];
     } else if (randomComputerNumber === 3) {
-        computerChoice = '✌️';
+        computerChoice = choices[2];
     
     }
     let computerFinalDisplay = document.getElementById('comp');
@@ -97,7 +120,7 @@ function generateCompChoice() {
 //Sequence when player wins, loses or draws
 
 function revealResult(computerFinalDisplay) {
-    if ((computerFinalDisplay == '🤜' && playerChoice[0]) || (computerFinalDisplay == '✋' && playerChoice[1]) || (computerFinalDisplay == '✌️' && playerChoice[2])) {
+    if ((computerFinalDisplay == choices[0] && playerChoice[0]) || (computerFinalDisplay == choices[1] && playerChoice[1]) || (computerFinalDisplay == choices[2] && playerChoice[2])) {
         console.log('Draw!');
     } else {
         console.log('Not a draw!');
