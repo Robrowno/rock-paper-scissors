@@ -19,6 +19,10 @@ function beginGame(e) {
     gamePage.style.display = 'initial';
     homePage.style.display = 'none';
     banner.style.display = 'none';
+
+    let username = document.getElementById("u-name").value
+    document.getElementById("username").innerHTML = username
+    document.getElementById("user-score").innerHTML = username
      
 }
 let startGame = document.getElementById('start-game');
@@ -109,21 +113,36 @@ function generateCompChoice() {
         computerChoice = choices[2];
     
     }
-    let computerFinalDisplay = document.getElementById('comp');
+    let computerFinalDisplay = document.getElementById('comp')
     computerFinalDisplay.classList.add('displayplayerchoice')
     computerFinalDisplay.innerHTML = computerChoice;
-    revealResult(computerFinalDisplay);
+
+    let playerFinalDisplay = document.getElementById('user')
+    revealResult(computerFinalDisplay.innerHTML,playerFinalDisplay.innerHTML);
 }; 
 
 
 
 //Sequence when player wins, loses or draws
 
-function revealResult(computerFinalDisplay) {
-    if ((computerFinalDisplay == choices[0] && playerChoice[0]) || (computerFinalDisplay == choices[1] && playerChoice[1]) || (computerFinalDisplay == choices[2] && playerChoice[2])) {
+function revealResult(computerFinalDisplay, playerFinalDisplay) {
+    if (computerFinalDisplay==playerFinalDisplay) {
         console.log('Draw!');
     } else {
         console.log('Not a draw!');
+        //let choices = ['🤜', '✋', '✌️'];
+        if((playerFinalDisplay==choices[0] && computerFinalDisplay==choices[2]) || 
+           (playerFinalDisplay==choices[1] && computerFinalDisplay==choices[0]) ||
+           (playerFinalDisplay==choices[2] && computerFinalDisplay==choices[1])){
+            let playerScore = document.getElementById('u-score').innerHTML
+            playerScore++
+            document.getElementById('u-score').innerHTML = playerScore
+        }else{
+            let computerScore = document.getElementById('c-score').innerHTML
+            computerScore++
+            document.getElementById('c-score').innerHTML = computerScore
+        }
+
     }
 }
 
@@ -138,9 +157,8 @@ function updateScoreBoard() {
 
 //Reset scoreboard 
 
-/*let resetButton = getElementById('reset');
-resetButton.addEventListener('click', reset);
-
+document.getElementById('reset').addEventListener('click', reset);
 function reset() {
-    
-} */
+    document.getElementById('c-score').innerHTML=0
+    document.getElementById('u-score').innerHTML=0
+} 
