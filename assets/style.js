@@ -9,17 +9,13 @@ if (homePage) {
     gamePage.style.display = 'none';
 }
 
-// User can input their name (optional)
-
-
-
-
 // Gamepage begins on start button and win/lose banner is hidden
 function beginGame(e) {
     gamePage.style.display = 'initial';
     homePage.style.display = 'none';
     banner.style.display = 'none';
 
+    // User can input their name (Optional for player)
     let username = document.getElementById("u-name").value
     document.getElementById("username").innerHTML = username
     document.getElementById("user-score").innerHTML = username
@@ -29,40 +25,15 @@ let startGame = document.getElementById('start-game');
 startGame.addEventListener('click', beginGame);
 
 //Game begins when player selects either R, P or S
-
+let playerChoice = [rockItm, paperItm, scissorsItm]; 
 let rockItm = document.getElementById('rock');
 let paperItm = document.getElementById('paper');
 let scissorsItm = document.getElementById('scissors');
-/* let playerArena = document.getElementById('user'); */
-
-let playerChoice = [rockItm, paperItm, scissorsItm]; 
 
 let choices = ['🤜', '✋', '✌️'];
 let computerChoice;
 
 let banner = document.getElementById('wl');
-
-
-/*
-let items = document.getElementsByClassName('items')
-
-items.forEach((item) => {
-    item.addEventListener("click", function(displayplayerchoice) {
-        if (rockItm) {
-            playerArena.innerHTML = choices[0]
-            playerArena.classList.add('displayplayerchoice')
-        } else if (paperItm) {
-            playerArena.innerHTML = choices[1]
-            playerArena.classList.add('displayplayerchoice')
-        } else if (scissorsItm) {
-            playerArena.innerHTML = choices[2]
-            playerArena.classList.add('displayplayerchoice')
-        } 
-        generateCompChoice()
-
-    });
-  }); */
-
 
 
 //When player selects Rock
@@ -75,7 +46,6 @@ function selectRock() {
 
     console.log('This is rock');
     generateCompChoice();
-
 } 
 
 //When player selects Paper
@@ -89,6 +59,7 @@ function selectPaper() {
     console.log('This is paper');
     generateCompChoice();
 }
+
 //When player selects Scissors 
 let chooseScissors = scissorsItm.addEventListener('click', selectScissors);
 let scissors = document.getElementById('user')
@@ -101,6 +72,7 @@ function selectScissors() {
     generateCompChoice();
 } 
 
+// Computer choice generated randomly
 function generateCompChoice() {
     let randomComputerNumber = Math.floor(Math.random() * 3) + 1;
     console.log(randomComputerNumber);
@@ -124,13 +96,11 @@ function generateCompChoice() {
 
 
 //Sequence when player wins, loses or draws
-
 function revealResult(computerFinalDisplay, playerFinalDisplay) {
     if (computerFinalDisplay==playerFinalDisplay) {
         console.log('Draw!');
     } else {
         console.log('Not a draw!');
-        //let choices = ['🤜', '✋', '✌️'];
         if((playerFinalDisplay==choices[0] && computerFinalDisplay==choices[2]) || 
            (playerFinalDisplay==choices[1] && computerFinalDisplay==choices[0]) ||
            (playerFinalDisplay==choices[2] && computerFinalDisplay==choices[1])){
@@ -146,16 +116,11 @@ function revealResult(computerFinalDisplay, playerFinalDisplay) {
     }
 }
 
+
+//Reset scoreboard 
 let scoreboard = document.getElementById('score');
 let playerScore = document.getElementById('u-score');
 let computerScore = document.getElementById('c-score');
-
-
-function updateScoreBoard() {
-
-}
-
-//Reset scoreboard 
 
 document.getElementById('reset').addEventListener('click', reset);
 function reset() {
