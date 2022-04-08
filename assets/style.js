@@ -17,12 +17,9 @@ function beginGame(e) {
 
     // User can input their name (Optional for player)
     let username = document.getElementById("u-name").value
-    document.getElementById("username").innerHTML = username
-    document.getElementById("user-score").innerHTML = username
-    if (document.getElementById("u-name").value = 'null') {
-        document.getElementById("username").innerHTML = 'User'
-        document.getElementById("user-score").innerHTML = 'User'
-    }
+    document.getElementById("username").innerHTML = username || 'User'
+    document.getElementById("user-score").innerHTML = username || 'User'
+   
      
 }
 let startGame = document.getElementById('start-game');
@@ -45,8 +42,6 @@ let rock = document.getElementById('user')
 function selectRock() {
     rock.innerHTML = choices[0]
     rock.classList.add('displayplayerchoice')
-
-    console.log('This is rock')
     generateCompChoice()
 } 
 
@@ -57,8 +52,6 @@ let paper = document.getElementById('user')
 function selectPaper() {
     paper.innerHTML = choices[1]
     paper.classList.add('displayplayerchoice')
-
-    console.log('This is paper')
     generateCompChoice()
 }
 
@@ -69,15 +62,12 @@ let scissors = document.getElementById('user')
 function selectScissors() {
     scissors.innerHTML = choices[2]
     scissors.classList.add('displayplayerchoice')
-
-    console.log('This is scissors')
     generateCompChoice()
 } 
 
 // Computer choice generated randomly
 function generateCompChoice() {
     let randomComputerNumber = Math.floor(Math.random() * 3) + 1
-    console.log(randomComputerNumber)
 
     if (randomComputerNumber === 1) {
         computerChoice = choices[0]
@@ -100,11 +90,9 @@ let banner = document.getElementById('wl')
 //Sequence when player wins, loses or draws
 function revealResult(computerFinalDisplay, playerFinalDisplay) {
     if (computerFinalDisplay==playerFinalDisplay) {
-        console.log('Draw!')
         banner.style.display = 'block'
         banner.innerHTML = 'Draw'
     } else {
-        console.log('Not a draw!')
         if((playerFinalDisplay==choices[0] && computerFinalDisplay==choices[2]) || 
            (playerFinalDisplay==choices[1] && computerFinalDisplay==choices[0]) ||
            (playerFinalDisplay==choices[2] && computerFinalDisplay==choices[1])){
