@@ -13,7 +13,7 @@ if (homePage) {
 function beginGame(e) {
     gamePage.style.display = 'initial'
     homePage.style.display = 'none'
-    banner.style.display = 'none'
+    banner.style.display = 'none' 
 
     // User can input their name (Optional for player)
     let username = document.getElementById("u-name").value
@@ -101,6 +101,8 @@ let banner = document.getElementById('wl')
 function revealResult(computerFinalDisplay, playerFinalDisplay) {
     if (computerFinalDisplay==playerFinalDisplay) {
         console.log('Draw!')
+        banner.style.display = 'block'
+        banner.innerHTML = 'Draw'
     } else {
         console.log('Not a draw!')
         if((playerFinalDisplay==choices[0] && computerFinalDisplay==choices[2]) || 
@@ -109,10 +111,14 @@ function revealResult(computerFinalDisplay, playerFinalDisplay) {
             let playerScore = document.getElementById('u-score').innerHTML
             playerScore++
             document.getElementById('u-score').innerHTML = playerScore
+            banner.style.display = 'block'
+            banner.innerHTML = 'You Win!'
         }else{
             let computerScore = document.getElementById('c-score').innerHTML
             computerScore++
             document.getElementById('c-score').innerHTML = computerScore
+            banner.style.display = 'block'
+            banner.innerHTML = 'You Lose!'
         }
 
     }
@@ -128,4 +134,5 @@ document.getElementById('reset').addEventListener('click', reset)
 function reset() {
     document.getElementById('c-score').innerHTML=0
     document.getElementById('u-score').innerHTML=0
+    banner.style.display = 'none'
 } 
