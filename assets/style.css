@@ -139,7 +139,7 @@ h1 {
     
 }
 
-/*-- WIN/LOSE message --*/
+/*-- WIN/LOSE/DRAW message --*/
 #wl {
     max-width: 80%;
     margin: 0 auto;
