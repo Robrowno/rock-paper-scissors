@@ -125,9 +125,11 @@ function reset() {
 } 
 
 // Round reset
-
-/*let i =  document.getElementById('u-score').innerHTML;
+/*
+let i =  document.getElementById('u-score').innerHTML;
+console.log(typeof i)
 let j =  document.getElementById('c-score').innerHTML
+console.log(typeof j)
 for (i; i < 10; i++) {
     //run timer
 } while (i === 10) {
