@@ -124,3 +124,17 @@ function reset() {
     banner.style.display = 'none'
 } 
 
+// Round reset
+
+/*let i =  document.getElementById('u-score').innerHTML;
+let j =  document.getElementById('c-score').innerHTML
+for (i; i < 10; i++) {
+    //run timer
+} while (i === 10) {
+    reset()
+}
+for (j; j < 10; i++) {
+    //run timer
+} while (j === 10) {
+    reset()
+} */
