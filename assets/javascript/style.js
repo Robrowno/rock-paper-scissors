@@ -1,3 +1,10 @@
+// Global Variables
+let rockItm = document.getElementById('rock')
+let paperItm = document.getElementById('paper')
+let scissorsItm = document.getElementById('scissors')
+let playerChoice = [rockItm, paperItm, scissorsItm]
+let choices = ['🤜', '✋', '✌️']
+let computerChoice
 
 //Website opens on startpage 
 let homePage = document.getElementById('start-page')
@@ -25,16 +32,8 @@ function beginGame(e) {
 let startGame = document.getElementById('start-game');
 startGame.addEventListener('click', beginGame);
 
+
 //Game begins when player selects either R, P or S
-let rockItm = document.getElementById('rock')
-let paperItm = document.getElementById('paper')
-let scissorsItm = document.getElementById('scissors')
-let playerChoice = [rockItm, paperItm, scissorsItm]
-
-let choices = ['🤜', '✋', '✌️']
-let computerChoice
-
-
 //When player selects Rock
 let chooseRock = rockItm.addEventListener('click', selectRock)
 let rock = document.getElementById('user')
@@ -124,3 +123,4 @@ function reset() {
     document.getElementById('u-score').innerHTML=0
     banner.style.display = 'none'
 } 
+
