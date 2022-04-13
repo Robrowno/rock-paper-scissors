@@ -1,8 +1,14 @@
 // Global Variables
-let rockItm = document.getElementById('rock')
+/*let rockItm = document.getElementById('rock')
 let paperItm = document.getElementById('paper')
 let scissorsItm = document.getElementById('scissors')
-let playerChoice = [rockItm, paperItm, scissorsItm]
+let playerChoice = [rockItm, paperItm, scissorsItm] */
+
+let playerChoiceIDs = ['rock','paper','scissors']
+let playerChoice = []
+for(i=0;i<playerChoiceIDs.length;i++){
+    playerChoice[i] = document.getElementById(playerChoiceIDs[i])
+}
 let choices = ['🤜', '✋', '✌️']
 let computerChoice
 
@@ -35,7 +41,7 @@ startGame.addEventListener('click', beginGame);
 
 //Game begins when player selects either R, P or S
 //When player selects Rock
-let chooseRock = rockItm.addEventListener('click', selectRock)
+let chooseRock = playerChoice[0].addEventListener('click', selectRock)
 let rock = document.getElementById('user')
 
 function selectRock() {
@@ -45,7 +51,7 @@ function selectRock() {
 } 
 
 //When player selects Paper
-let choosePaper = paperItm.addEventListener('click', selectPaper)
+let choosePaper = playerChoice[1].addEventListener('click', selectPaper)
 let paper = document.getElementById('user')
 
 function selectPaper() {
@@ -55,7 +61,7 @@ function selectPaper() {
 }
 
 //When player selects Scissors 
-let chooseScissors = scissorsItm.addEventListener('click', selectScissors)
+let chooseScissors = playerChoice[2].addEventListener('click', selectScissors)
 let scissors = document.getElementById('user')
 
 function selectScissors() {
@@ -100,16 +106,41 @@ function revealResult(computerFinalDisplay, playerFinalDisplay) {
             document.getElementById('u-score').innerHTML = playerScore
             banner.style.display = 'block'
             banner.innerHTML = 'You Win!'
+            checkRound()
         }else{
             let computerScore = document.getElementById('c-score').innerHTML
             computerScore++
             document.getElementById('c-score').innerHTML = computerScore
             banner.style.display = 'block'
             banner.innerHTML = 'You Lose!'
+            checkRound()
         }
 
     }
 }
+
+// Round wins when user/comp reaches 10 points
+
+function checkRound() {
+    let userPoint = document.getElementById('u-score').innerHTML 
+    let compPoint = document.getElementById('c-score').innerHTML 
+
+    if (userPoint >= 10) {
+        userRound = document.getElementById('u-rounds').innerHTML
+        document.getElementById('u-rounds').innerHTML = parseInt(userRound)+1
+        document.getElementById('u-score').innerHTML = 0
+        document.getElementById('c-score').innerHTML = 0
+    
+
+    }   if (compPoint >= 10) {
+        compRound = document.getElementById('c-rounds').innerHTML
+        document.getElementById('c-rounds').innerHTML = parseInt(compRound)+1
+        document.getElementById('u-score').innerHTML = 0
+        document.getElementById('c-score').innerHTML = 0
+    
+
+    } 
+}   
 
 
 //Reset scoreboard 
@@ -122,21 +153,8 @@ function reset() {
     document.getElementById('c-score').innerHTML=0
     document.getElementById('u-score').innerHTML=0
     banner.style.display = 'none'
+    document.getElementById('u-rounds').innerHTML=0
+    document.getElementById('c-rounds').innerHTML=0
 } 
 
-// Round reset
-/*
-let i =  document.getElementById('u-score').innerHTML;
-console.log(typeof i)
-let j =  document.getElementById('c-score').innerHTML
-console.log(typeof j)
-for (i; i < 10; i++) {
-    //run timer
-} while (i === 10) {
-    reset()
-}
-for (j; j < 10; i++) {
-    //run timer
-} while (j === 10) {
-    reset()
-} */
+
