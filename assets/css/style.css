@@ -123,7 +123,7 @@ h1 {
 }
 
 /*-- Timer box styling --*/
-#timer {
+#timer, #rounds {
     background: #fff;
     border: 3px solid black;
     display: flex;
@@ -135,6 +135,15 @@ h1 {
     height: 35px;
     width: 70px
 }
+
+#rounds-label {
+    margin: 0 auto;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* 'Arena styling */
 .arena-block {
