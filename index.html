@@ -15,7 +15,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io/favicon-16x16.png">
 <link rel="manifest" href="assets/images/favicon_io/site.webmanifest">
 </head>
-
+<!-- Start Page that user first sees when website is opened-->
 <body>
     <div id="start-page">
         <h1 id="home-h">Rock Paper Scissors! </h1>
@@ -34,8 +34,10 @@
                 <input id="u-name" type="text" maxlength="15" placeholder="Please enter your name here!"
                     name="username">
             </div>
+            <!--Start game div/button-->
             <div id="start-game">Start!</div>
     </div>
+    <!-- End of Start Page section -->
 
  <!--   <div id="modal" class="modal-outer">
         <div class="modal-inner">
@@ -44,17 +46,19 @@
         </div>
     </div> -->
 
+    <!-- Main Game section-->
     <main id="main">
         <h1>Rock Paper Scissors!</h1>
         <div class="content-block">
             <h2 class="subheading"> Choose Your Weapon!</h2>
             <div class="block">
+                <!-- In-game player choices-->
                 <div id="rock" class="item items">🤜</div>
                 <div id="paper" class="item items">✋</div>
                 <div id="scissors" class="item items">✌️</div>
             </div>
         </div>
-
+        <!-- Player vs Computer bar-->
         <div class="content-block">
             <div class="block">
                 <div id="username" class="player">User</div>
@@ -63,26 +67,27 @@
             </div>
         </div>
 
-
+        <!-- The game-arena -->
         <div class="content-block">
             <div class="block">
                 <div id="user" class="arena-block"></div>
                 <div id="comp" class="arena-block"></div>
             </div>
         </div>
-
+        <!-- The WIN/LOSE/DRAW Banner that displays after each user choice-->
         <div id="wl"></div>
-
+        <!-- The match scoreboard-->
         <div class="content-block">
-            <h2 class="subheading"></h2>
             <div class="block block-score">
                 <div id="user-score">User </div>
                 <div class="blocktwo" id="score"><span id="u-score">0</span>:<span id="c-score">0</span></div>
                 <div id="comp-score"> Comp</div>
             </div>
         </div>
+        <!-- The rounds scoreboard -->
         <label id="rounds-label">Rounds</label>
         <div id="rounds"><span id="u-rounds">0</span>:<span id="c-rounds">0</span></div>
+        <!-- The Game Reset div/button-->
         <div id="reset">Reset</div>
     </main>
 
