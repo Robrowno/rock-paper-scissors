@@ -130,13 +130,23 @@ function checkRound() {
         document.getElementById('u-rounds').innerHTML = parseInt(userRound)+1
         document.getElementById('u-score').innerHTML = 0
         document.getElementById('c-score').innerHTML = 0
+       /* let modal = document.getElementById('modal')
+        let modalPara = document.getElementById('modalpara')
+        modal.style.display = 'block'
+        modal.classList.add('modal-outer')
+        modalPara.innerText = 'You won the round! Keep playing to see if you can win another!' */
+        
     
-
     }   if (compPoint >= 10) {
         compRound = document.getElementById('c-rounds').innerHTML
         document.getElementById('c-rounds').innerHTML = parseInt(compRound)+1
         document.getElementById('u-score').innerHTML = 0
         document.getElementById('c-score').innerHTML = 0
+       /* let modal = document.getElementById('modal')
+        let modalPara = document.getElementById('modalpara')
+        modal.style.display = 'block'
+        modal.classList.add('modal-outer')
+        modalPara.innerText = 'Hard luck! The computer won this time. Play another round to see if you can beat the computer this time!' */
     
 
     } 

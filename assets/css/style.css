@@ -107,7 +107,7 @@ h1 {
     cursor: pointer;
 }
 
-/* Player/Computer display bar */
+/*-- Player/Computer display bar --*/
 .player {
     background: lightgreen;
     border: 3px solid black;
@@ -122,30 +122,37 @@ h1 {
     padding-top: 3%;
 }
 
-/*-- Timer box styling --*/
-#timer, #rounds {
+
+/*-- Modal Styling --*/
+.model-outer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    height: 80%;
+    width: 80%;
+    background-color: aquamarine;
+}
+
+.model-inner {
     background: #fff;
-    border: 3px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    margin: 0 auto;
+    padding: 2%;
+
+}
+
+.close-modal {
+    float: right;
     font-size: 20px;
-    margin: 0 auto;
-    height: 35px;
-    width: 70px
+    color: black;
+
 }
-
-#rounds-label {
-    margin: 0 auto;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.close-modal:hover {
+    cursor: pointer;
+    text-decoration: none;
 }
+/*-- End of Modal styling --*/
 
-
-/* 'Arena styling */
+/*-- 'Arena styling --*/
 .arena-block {
     background-color: lightgreen;
     border: 3px solid black;
@@ -196,6 +203,29 @@ h1 {
     background: #fff;
 
 }
+
+/*-- Rounds box styling --*/
+#rounds {
+    background: #fff;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+    height: 35px;
+    width: 70px
+}
+
+#rounds-label {
+    margin: 0 auto;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /*-- Green Reset button (div) --*/
 #reset {
