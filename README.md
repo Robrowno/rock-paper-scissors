@@ -9,14 +9,40 @@ This game is designed to be played by someone who wants to play a game but doesn
 
 The goal of this website, beyond testing my Javascript abilities, is to make a well-tested and fully functioning basic game that combines functionality with clean design and colours. 
 
+[Live Link here](robrowno.github.io/rock-paper-scissors/)
+
 ---
 ## Website across different platforms
+![Responsiveness check](/assets/images/readme-images/responsiveness.png)
 
 ---
 ## Table of Contents
+1. [Wireframe](#wireframe)
+2. [UX Description](#ux-description)
+3. [Website Features](#website-features)
+4. [Features to implement](#other-features-to-implement)
+5. [Testing and Validation](#testing-and-validation)
+6. [Bugs and Issues](#bugs-and-issues)
+7. [Peer Reviews](#peer-reviews)
+8. [Deployment](#deployment)
+9. [Credits](#credits)
+10. [Final Thoughts](#final-thoughts-for-pp2)
+
 
 ---
 ## Wireframe
+I used Balsamiq to create my wireframes for this project. I took a mobile/tablet-first approach with this project, and as such, my wireframes reflect that. 
+
+I first went about creating a wireframe for how I wanted my starting page to look, and when I was happy, I moved on to the game page sections for tablet and mobil respectively. 
+
+### Starting Page
+
+![Start page wireframe](assets/images/readme-images/start-page-wireframe.png)
+
+
+### Game Page
+
+![Game page wireframe](assets/images/readme-images/game-wireframe.png)
 
 ---
 ## UX Description
@@ -57,6 +83,15 @@ Colours:
 - Favicons imported from: [Favicon.io](https://favicon.io/emoji-favicons/oncoming-fist)
 - Learned how to make colour gradient backgrounds on: [cssgradient.io](https://cssgradient.io/)
 - Image for Rock, Paper, Scissors rules came from here: [RPS Rules image](https://andygrunwald.com/blog/playing-rockpaperscissors-with-500-people/)
+- Responsiveness check from: [Am I Responsive?](http://ami.responsivedesign.is/)
+
+
+### Help from Peers and mentors
+
+- A massive thanks to Danilo D'Auria for his superb help in getting me through some hurdles on my JS journey!
+- Many thanks to Daisy McGirr, my mentor through this project, who gave me all the guidance and support required to steer me in the right direction.
+- The London C.I Coding Community group. Always supporting which me with my questions and giving great advice. 
+
 
 ---
 ## Final Thoughts for PP2 
