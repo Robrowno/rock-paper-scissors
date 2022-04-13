@@ -280,4 +280,11 @@ h1 {
         padding-top: 0.5%;
     }
 } 
+
+@media screen and (min-height: 900px) {
+    
+    .arena-block {
+        height: 35vh;
+    }
+}
 /* End of Media Query Section */
