@@ -144,7 +144,7 @@ function checkRound() {
        let modal = document.getElementById('modal')
         let modalPara = document.getElementById('modalpara')
         modal.style.display = 'inline'
-        modalPara.innerText = 'Hard luck! The computer won this time. Play another round to see if you can beat the computer this time!' 
+        modalPara.innerText = 'Hard luck! The computer won this time. Play another round to see if you can beat the computer next time!' 
     
 
     } 
