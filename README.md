@@ -61,8 +61,67 @@ Colours:
 ---
 ## Website features
 
+### Start-Page
+An essential task for this website was to have to responsive displays that change upon clicking a button/div when the player is ready to play. 
+
+By hiding the main page through surrounding it in a div in my html file, I was able to make this start page show by default and then hide that page when the player clicks 'start'. 
+
+The Start-Page briefly describes the rules of the game of Rock, Paper, Scissors and tells the user how the scoring system works. An image provides visual feedback to the user as well to help cement the rules in their mind. When they feel they understand the rules of the game, then can enter a name/username and click 'start'.
+
+![Start-Page](/assets/images/readme-images/startpage-ss.png)
+
+### Game-Page
+
+Once the player has clicked start, the game page will appear. This is done by hiding the start page div in Javascript and revealing the main page div.
+This is the full page on mobile: 
+
+![Main-Page](/assets/images/readme-images/gamepage-ss.png)
+
+### Choices Bar
+
+The game features a choices bar with 3 options to select. Rock (Fist emoji 🤜), Paper (Open hand emoji ✋) and Scissors (Peace sign emoji ✌️). There is an event listener on each choice that will listen for a click and replicate in the arena section. 
+
+![Choices](/assets/images/readme-images/choices-ss.png)
+
+### Game Arena
+
+The arena is where the users choice and the random computer generated response will show. The user choice will show on the left and the computer choice on the right.
+
+### Before choice:
+The arena before the player makes any selection:
+![Before-Choice](/assets/images/readme-images/game-arena-ss.png)
+
+### After Choice:
+
+Player choice and random computer choice displayed:
+![After-Choice](/assets/images/readme-images/game-arena-result-ss.png)
+
+### Banner displayed when player wins
+![You Win!](/assets/images/readme-images/banner-win-ss.png)
+
+### Banner displayed when player loses
+![You Lose!](/assets/images/readme-images/banner-lose-ss.png)
+
+### Banner displayed when player draws
+![Draw](/assets/images/readme-images/banner-draw-ss.png)
+
+### Score Tally Section: 
+This section displays the user and computer in a bar with the match score in between, and the round score below that. The match score will increment as the game goes on until one of the players reaches 10. At which point, the round tally will go up by one and reset the match scores back to 0 to play another round. 
+
+At the very bottom of the page is a green reset div/button, that has an event listener that when clicked on, will reset all the scores (match and round) to 0 to start the game over again from thew beginning. 
+
+![Score Section](/assets/images/readme-images/scores-reset-ss.png)
+
+
+### Round-Over Modal
+This is the modal that displays when a round is won by either the player or the computer. Depending on which player wins the round, a different message will display. 
+
+
 ---
 ## Other features to implement
+
+Given more time to invest in the project, I would likely aim to implement the following features: 
+
 
 ---
 ## Testing and Validation
