@@ -124,29 +124,47 @@ h1 {
 
 
 /*-- Modal Styling --*/
-.model-outer {
+.modal-outer {
     display: none;
-    position: fixed;
+    position: absolute;
     z-index: 1;
-    height: 80%;
-    width: 80%;
-    background-color: aquamarine;
+    height: 100%;
+    width: 100%;
+    background: transparent
 }
 
-.model-inner {
+.modal-inner {
     background: #fff;
     margin: 0 auto;
-    padding: 2%;
+    height: 20%;
+    width: 50%;
+    top: 40%;
+    position: absolute;
+    left: 25%;
+
 
 }
 
-.close-modal {
+#modalpara {
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#close-modal {
     float: right;
     font-size: 20px;
     color: black;
-
+    font-weight: bold;
+    position: absolute;
+    right: 26.5%;
+    top: 40%;
+    z-index: 10;
 }
-.close-modal:hover {
+
+
+#close-modal:hover {
     cursor: pointer;
     text-decoration: none;
 }
