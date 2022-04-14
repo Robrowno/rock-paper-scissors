@@ -116,11 +116,22 @@ At the very bottom of the page is a green reset div/button, that has an event li
 ### Round-Over Modal
 This is the modal that displays when a round is won by either the player or the computer. Depending on which player wins the round, a different message will display. 
 
+### Round-Win modal
+![Round-Win Modal](/assets/images/readme-images/win-modal.png)
+
+### Round-Lose modal
+![Round-Lose Modal](/assets/images/readme-images/lose-modal.png)
 
 ---
 ## Other features to implement
 
 Given more time to invest in the project, I would likely aim to implement the following features: 
+
+- Either a countdown or count-up timer. Depending on which, there would either be a limited amount of time in which you have to win as many matches and rounds as you can, or in the case of counting up, the timer would serve just to show the user how long they've been playing.
+
+- An extra pair of choices to replicate something akin to rock, paper, scissors, lizard, spock. This would add an extra layer of complexity to the game, and would be selectable as an option in-game, so the player could jump between 3 and 5 option versions of the game as they so desire.
+
+- Some basic animation to the emojis to add some nice visual effects to the project. Perhaps an emoji can increase in size slightly for the winning player and decrease in size slightly for the losing player. 
 
 
 ---
@@ -128,6 +139,9 @@ Given more time to invest in the project, I would likely aim to implement the fo
 
 ---
 ## Bugs and Issues
+I had several issues with this project. And thanks to some keen-eyed people who helped me troubleshoot and gave me a walkthrough on debugging, I was able to get past them. 
+
+The first issue I had was that when I was trying to create a function for getting a result back from the computer, I was always getting a draw when I console.log'd the result. 
 
 ---
 ## Peer reviews
@@ -143,6 +157,7 @@ Given more time to invest in the project, I would likely aim to implement the fo
 - Learned how to make colour gradient backgrounds on: [cssgradient.io](https://cssgradient.io/)
 - Image for Rock, Paper, Scissors rules came from here: [RPS Rules image](https://andygrunwald.com/blog/playing-rockpaperscissors-with-500-people/)
 - Responsiveness check from: [Am I Responsive?](http://ami.responsivedesign.is/)
+- W3 Schools inspired my modal design: [W3 Schools](https://www.w3schools.com/howto/howto_css_modals.asp)
 
 
 ### Help from Peers and mentors
@@ -154,5 +169,7 @@ Given more time to invest in the project, I would likely aim to implement the fo
 
 ---
 ## Final Thoughts for PP2 
+
+This project really challenged my understanding of Javascript and I certainly learned a lot through doing this project and from getting help from peers and mentors across the board. The project has certainly inspired me to continue developing my JS skills further and I expect I will do some side-projects to accomplish this. 
 
 ---
