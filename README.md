@@ -19,14 +19,15 @@ The goal of this website, beyond testing my Javascript abilities, is to make a w
 ## Table of Contents
 1. [Wireframe](#wireframe)
 2. [UX Description](#ux-description)
-3. [Website Features](#website-features)
-4. [Features to implement](#other-features-to-implement)
-5. [Testing and Validation](#testing-and-validation)
-6. [Bugs and Issues](#bugs-and-issues)
-7. [Peer Reviews](#peer-reviews)
-8. [Deployment](#deployment)
-9. [Credits](#credits)
-10. [Final Thoughts](#final-thoughts-for-pp2)
+3. [Technologies used](#technologies-used)
+4. [Website Features](#website-features)
+5. [Features to implement](#other-features-to-implement)
+6. [Testing and Validation](#testing-and-validation)
+7. [Bugs and Issues](#bugs-and-issues)
+8. [Peer Reviews](#peer-reviews)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
+11. [Final Thoughts](#final-thoughts-for-pp2)
 
 
 ---
@@ -51,12 +52,45 @@ For this game, bright and bold colours were a must. However, I wanted to make su
 I featured the follwing:
 
 Colours:
+
 - A radial gradient background featuring #fdbb2d, orange and aquamarine.
 - Start-Game and Reset buttons in Green.
 - All content boxes in Lightgreen.
 - User and Computer score labels in Lightskyblue
 - Score and Timer in #fff 
 - All fonts and borders in Black. 
+
+Layout:
+
+- Start Page:
+  - Game Rules 
+  - Supporting Image 
+  - Input field
+  - Start Button
+
+- Game Page:
+  - Title/Return to Start Page
+  - Player Choices bar
+  - Username vs Computer bar
+  - "Game Arena"
+  - Win/Lose/Draw Banner following result
+  - Another Username vs Comp bar displaying match score
+  - Round score displayed beneath that
+  - Reset game button
+
+
+---
+
+## Technologies used
+
+- HTML5 - Used to structure my website
+- CSS3 - Used to style my website
+- JS - Used to provide logic to my website
+- Github - The cloud based service for hosting repositories for over 73 million developers
+- Git - Used to add, commit and push my changes to the server
+- Balsamiq - Used to plan and create my wireframes for my projects
+- Favicon.io - Used to source my favicon icons for my website
+- Google Fonts - Used to source different fonts in my css file
 
 ---
 ## Website features
@@ -136,7 +170,23 @@ Given more time to invest in the project, I would likely aim to implement the fo
 
 
 ---
+
 ## Testing and Validation
+
+
+
+### Responsiveness Testing (Multi-Platform)
+
+
+
+### Accessibility Testing
+
+
+
+### Feature Testing
+
+
+
 
 ### Validation:
 
@@ -158,7 +208,13 @@ No warnings or errors.
 ## Bugs and Issues
 I had several issues with this project. And thanks to some keen-eyed people who helped me troubleshoot and gave me a walkthrough on debugging, I was able to get past them. 
 
-The first issue I had was that when I was trying to create a function for getting a result back from the computer, I was always getting a draw when I console.log'd the result. 
+The first issue I had was that when I was trying to create a function for getting a result back from the computer, I was always getting a draw when I console.log'd the result. Turned out I wasn't specific enough in my targeting. I needed to use ".innerHTML" sooner than I thought in my code as before I found that out it was targetting a whole div. 
+
+I also had issues with getting the username to display correctly when entered in the input field. It was pointed out to me that I should use ".value" in my code and "||" to default back to the standard 'User' placeholder if nothing is written in the input field. 
+
+I put the debugger to good use when trying to see why my modals weren't being targetted as expected. Through getting to 10 points in-game and setting break points on the correct lines of code, I was able to work out why some elements weren't being targetted correctly and work on fixing it. I was suggested the idea of making the modal-outer transparent as a way to get around the issue of not being able to find a reliable way to 'stop' the game whilst the modal appears. 
+
+Early on, the win/lose/draw banner wasn't displaying as I had intended through my css styling. I found out it was because I needed to set the style.display to 'block' in my js file for it to be interpretted as I wanted it to. 
 
 ---
 ## Peer reviews
@@ -190,3 +246,5 @@ The first issue I had was that when I was trying to create a function for gettin
 This project really challenged my understanding of Javascript and I certainly learned a lot through doing this project and from getting help from peers and mentors across the board. The project has certainly inspired me to continue developing my JS skills further and I expect I will do some side-projects to accomplish this. 
 
 ---
+
+[Go Back To The Top](#rock-paper-scissors)
