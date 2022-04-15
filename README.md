@@ -66,7 +66,7 @@ An essential task for this website was to have to responsive displays that chang
 
 By hiding the main page through surrounding it in a div in my html file, I was able to make this start page show by default and then hide that page when the player clicks 'start'. 
 
-The Start-Page briefly describes the rules of the game of Rock, Paper, Scissors and tells the user how the scoring system works. An image provides visual feedback to the user as well to help cement the rules in their mind. When they feel they understand the rules of the game, then can enter a name/username and click 'start'.
+The Start-Page briefly describes the rules of the game of Rock, Paper, Scissors and tells the user how the scoring system works. An image provides visual feedback to the user as well to help cement the rules in their mind. When they feel they understand the rules of the game, then can enter a name/username and click 'start'. If they feel they need to go back to the start page to check over the rules or change their username, they can do so by clicking the title on the game page.
 
 ![Start-Page](/assets/images/readme-images/startpage-ss.png)
 
@@ -80,6 +80,7 @@ This is the full page on mobile:
 ### Choices Bar
 
 The game features a choices bar with 3 options to select. Rock (Fist emoji 🤜), Paper (Open hand emoji ✋) and Scissors (Peace sign emoji ✌️). There is an event listener on each choice that will listen for a click and replicate in the arena section. 
+Above the choices bar is the title, which when clicked on, takes the user back to the start page. There is a reminder of this on the start page as well. 
 
 ![Choices](/assets/images/readme-images/choices-ss.png)
 
@@ -137,6 +138,22 @@ Given more time to invest in the project, I would likely aim to implement the fo
 ---
 ## Testing and Validation
 
+### Validation:
+
+HTML Validation through [HTML-Validator](https://validator.w3.org/)
+
+No warnings or errors.
+![HTML PASS](/assets/images/readme-images/html-val-ss.png)
+
+CSS Validation through [CSS-Validator](https://jigsaw.w3.org/css-validator/)
+
+No warnings or errors.
+![CSS PASS](/assets/images/readme-images/css-val-ss.png)
+
+JS Validation through [JS-Validator](https://jshint.com/)
+
+No warnings or errors.
+![JS PASS](/assets/images/readme-images/js-val-ss.png)
 ---
 ## Bugs and Issues
 I had several issues with this project. And thanks to some keen-eyed people who helped me troubleshoot and gave me a walkthrough on debugging, I was able to get past them. 
