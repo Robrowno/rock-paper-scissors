@@ -1,9 +1,4 @@
 // Global Variables
-/*let rockItm = document.getElementById('rock')
-let paperItm = document.getElementById('paper')
-let scissorsItm = document.getElementById('scissors')
-let playerChoice = [rockItm, paperItm, scissorsItm] */
-
 let playerChoiceIDs = ['rock','paper','scissors']
 let playerChoice = []
 for(i=0;i<playerChoiceIDs.length;i++){
@@ -11,6 +6,7 @@ for(i=0;i<playerChoiceIDs.length;i++){
 }
 let choices = ['🤜', '✋', '✌️']
 let computerChoice
+let banner = document.getElementById('wl')
 
 //Website opens on startpage 
 let homePage = document.getElementById('start-page')
@@ -27,16 +23,23 @@ function beginGame(e) {
     gamePage.style.display = 'initial'
     homePage.style.display = 'none'
     banner.style.display = 'none' 
+    let title = document.getElementById('link')
+    title.style.cursor = 'pointer'
 
     // User can input their name (Optional for player)
     let username = document.getElementById("u-name").value
     document.getElementById("username").innerHTML = username || 'User'
     document.getElementById("user-score").innerHTML = username || 'User'
    
-     
 }
 let startGame = document.getElementById('start-game');
 startGame.addEventListener('click', beginGame);
+
+// Function to send user back to start page on clicking title
+function goToStartPage() {
+    homePage.style.display = 'initial'
+    gamePage.style.display = 'none'
+}
 
 
 //Game begins when player selects either R, P or S
@@ -80,7 +83,6 @@ function generateCompChoice() {
         computerChoice = choices[1]
     } else if (randomComputerNumber === 3) {
         computerChoice = choices[2]
-    
     }
     let computerFinalDisplay = document.getElementById('comp')
     computerFinalDisplay.classList.add('displayplayerchoice')
@@ -89,8 +91,6 @@ function generateCompChoice() {
     let playerFinalDisplay = document.getElementById('user')
     revealResult(computerFinalDisplay.innerHTML,playerFinalDisplay.innerHTML);
 }; 
-
-let banner = document.getElementById('wl')
 
 //Sequence when player wins, loses or draws
 function revealResult(computerFinalDisplay, playerFinalDisplay) {
@@ -115,12 +115,10 @@ function revealResult(computerFinalDisplay, playerFinalDisplay) {
             banner.innerHTML = 'You Lose!'
             checkRound()
         }
-
     }
 }
 
-// Round wins when user/comp reaches 10 points
-
+// Round wins when user/comp reaches 10 points + modal displays
 function checkRound() {
     let userPoint = document.getElementById('u-score').innerHTML 
     let compPoint = document.getElementById('c-score').innerHTML 
@@ -134,7 +132,6 @@ function checkRound() {
         let modalPara = document.getElementById('modalpara')
         modal.style.display = 'inline'
         modalPara.innerText = 'You won the round! Keep playing to see if you can win another!' 
-        
     
     }   if (compPoint >= 10) {
         compRound = document.getElementById('c-rounds').innerHTML
@@ -146,9 +143,9 @@ function checkRound() {
         modal.style.display = 'inline'
         modalPara.innerText = 'Hard luck! The computer won this time. Play another round to see if you can beat the computer next time!' 
     
-
     } 
 }   
+//Function to close modal by clicking on 'x'
 function closeModal() {
     document.getElementById('modal').style.display = 'none'
 }
@@ -167,4 +164,4 @@ function reset() {
     document.getElementById('c-rounds').innerHTML=0
 } 
 
-
+// End of JS file

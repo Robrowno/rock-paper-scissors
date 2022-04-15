@@ -10,7 +10,7 @@
 }
 
 body {
-    background-image: radial-gradient(circle, #fdbb2d 0%, orange 15%, aquamarine 80%); 
+    background-image: radial-gradient(circle, #fdbb2d 0%, orange 5%, aquamarine 80%); 
 }
 
 /*-- Home Page Styling Section --*/
@@ -22,7 +22,6 @@ body {
     margin: 0 auto;
     max-width: 70vw;
     padding: 5px;
-
 }
 
 img {
@@ -41,7 +40,6 @@ input {
     display: block;
     margin: 0 auto;
     font-size: 24px;
-    
 }
 
 #start-game {
@@ -72,7 +70,6 @@ h1 {
     margin: 0 auto;
     padding-top: 1%;
     font-size: calc(26px + (32 - 26) * ((100vw - 300px) / (1440 - 300)));
-
 }
 
 /*-- General Block styling */
@@ -81,7 +78,6 @@ h1 {
     margin: 0 auto;
     padding: 1rem;
     margin-top: 5px;
-
 }
 
 /*-- "Choose Your Weapon!" Subheading */
@@ -142,9 +138,6 @@ h1 {
     top: 40%;
     position: absolute;
     left: 25%;
-
-
-
 }
 
 #modalpara {
@@ -185,7 +178,6 @@ h1 {
 
 .displayplayerchoice {
     font-size: 4rem;
-    
 }
 
 /*-- WIN/LOSE/DRAW message --*/
@@ -221,7 +213,6 @@ h1 {
     border: 2px solid black;
     font-size: 1.7rem;
     background: #fff;
-
 }
 
 /*-- Rounds box styling --*/
@@ -245,7 +236,6 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-
 
 /*-- Green Reset button (div) --*/
 #reset {
@@ -306,7 +296,6 @@ h1 {
 } 
 
 @media screen and (min-height: 900px) {
-    
     .arena-block {
         height: 35vh;
     }

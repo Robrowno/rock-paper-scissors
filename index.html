@@ -28,12 +28,14 @@
             <p class="home-p">In short, Rock beats Scissors, Paper beats Rock and Scissors beats paper. A score will be
                 tallied for you at the bottom of the screen, keeping track as you play against the computer. When either
                 you or the computer reaches a score of 10, that round will be won and another round will begin!
+
+              <b>Remember:</b> If you need to come back to this page, just click the <em>title</em> in-game and you will be taken right back here!
             </p>
             <img src="assets/images/rock-paper-scissors-game-rules.png"
                 alt="Rules of Rock, Paper, Scissors - demonstrated with drawings of a clenched fist, open palm and peace sign.">
             <p class="home-p">Please display a username before we begin:</p>
             <div id="div-input">
-                <input id="u-name" type="text" maxlength="15" placeholder="Please enter your name here!"
+                <input id="u-name" type="text" maxlength="15" placeholder="Please enter your name"
                     name="username">
             </div>
             <!--Start game div/button-->
@@ -41,16 +43,19 @@
     </div>
     <!-- End of Start Page section -->
 
-       <div id="modal" class="modal-outer">
-        <span id="close-modal" onclick="closeModal()">x</span> 
+    <!-- Modal for round win/loss -->
+    <div id="modal" class="modal-outer">
+        <span id="close-modal" onclick="closeModal()">x</span>
         <div class="modal-inner">
             <p id="modalpara"></p>
         </div>
-    </div> 
+    </div>
+    <!-- End of Modal code -->
 
     <!-- Main Game section-->
     <main id="main">
-        <h1>Rock Paper Scissors!</h1>
+        <!-- Clicking the h1 on the Main Game Page switches back to Start Page-->
+        <h1 id="link" onclick="goToStartPage()">Rock Paper Scissors!</h1>
         <div class="content-block">
             <h2 class="subheading"> Choose Your Weapon!</h2>
             <div class="block">
