@@ -123,12 +123,9 @@ Above the choices bar is the title, which when clicked on, takes the user back t
 The arena is where the users choice and the random computer generated response will show. The user choice will show on the left and the computer choice on the right.
 
 ### Before choice:
-The arena before the player makes any selection:
 ![Before-Choice](/assets/images/readme-images/game-arena-ss.png)
 
 ### After Choice:
-
-Player choice and random computer choice displayed:
 ![After-Choice](/assets/images/readme-images/game-arena-result-ss.png)
 
 ### Banner displayed when player wins
@@ -173,17 +170,44 @@ Given more time to invest in the project, I would likely aim to implement the fo
 
 ## Testing and Validation
 
-
-
 ### Responsiveness Testing (Multi-Platform)
+
+I began this project with a mobile first approach, with the goal of having a website that works fluently between a minimum width of 320px (such as a small mobile device) up to 1440px wide (such as a large laptop).
+
+In order to do this, I tested my application on the following devices:
+- Iphone 5
+- Iphone 12
+- Macbook Pro
+- Using the responsiveness checker in dev tools to visualise no other devices. 
+
+Test:
+- Using deployed link, open the Rock Paper Scissors game on Iphone and Mac to test functions, check for bugs and unexpected styling issues. 
+- Using dev tools on my computer, I opened the website through the same link and right clicked my mouse to bring up an options list that brought up the dev tools option. 
+- If responsiveness on mobile and laptop is satisfactory, move to dev tools and select the preset widths above the website for mobile small, medium, large, tablet, laptop regular, large and large monitor. To further test, select the dimensions tab and select individual devices to visualise on acurate pixel sizes for various phones and tablets on the market right now. 
+
+
+Expectation: Having used percentages and viewport width for a majority of the sizing on my project, and utilising flex and its associated properties, I worked hard to ensure that responsiveness targets were met early on. I expected the application to scale up and down in size as deemed necessary. Starting with a mobile first approach, I didn't expect any errors on small screens. 
+
+
+Result: 
+- 
 
 
 
 ### Accessibility Testing
 
+For testing accesibility and performance, I used Lighthouse in Dev tools. 
+Lighthouse runs an audit of your website and feeds back a set of scores for accessibility, performance and best practices among others. 
+
+I can confirm that the website passed with great scores. See report below:
+
+![Lighthouse Report](/assets/images/readme-images/lighthouse-score-ss.png)
 
 
-### Feature Testing
+### Feature/Functionality Testing
+
+There are various events that occur on my project, so I had to compile a list of functionality testing to ensure I got exactly the right results each time.
+This ranges from username inputs, to start/reset buttons and game buttons that trigger a visual and behind-the-scenes response. 
 
 
 
@@ -204,6 +228,7 @@ JS Validation through [JS-Validator](https://jshint.com/)
 
 No warnings or errors.
 ![JS PASS](/assets/images/readme-images/js-val-ss.png)
+
 ---
 ## Bugs and Issues
 I had several issues with this project. And thanks to some keen-eyed people who helped me troubleshoot and gave me a walkthrough on debugging, I was able to get past them. 
