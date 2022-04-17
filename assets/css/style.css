@@ -15,16 +15,23 @@ body {
 
 /*-- Error 404 file styling--*/
 
+#error-title {
+    margin: 0 auto;
+    text-align: center;
+}
+
 #error {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 100px;
 
 }
 
 #return {
 text-align: center;
 text-decoration: none;
+padding-top: 50px;
 }
 
 
