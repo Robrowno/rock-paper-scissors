@@ -278,6 +278,7 @@ h1 {
 #error-title {
     text-align: center;
     font-weight: bold;
+    padding-top: 50px
 }
 
 #error {
@@ -291,7 +292,7 @@ h1 {
 #return {
 text-align: center;
 text-decoration: none;
-padding-top: 50px;
+color: black;
 }
 
 /*-- End of Error 404 styling section --*/
