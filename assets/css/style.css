@@ -13,29 +13,6 @@ body {
     background-image: radial-gradient(circle, #fdbb2d 0%, orange 5%, aquamarine 80%); 
 }
 
-/*-- Error 404 file styling--*/
-
-#error-title {
-    margin: 0 auto;
-    text-align: center;
-}
-
-#error {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 100px;
-
-}
-
-#return {
-text-align: center;
-text-decoration: none;
-padding-top: 50px;
-}
-
-
-
 /*-- Home Page Styling Section --*/
 #home-h {
     padding-bottom: 40px;
@@ -295,6 +272,29 @@ h1 {
 .modal-inner {
     height: 30%;
 }
+
+/*-- Error 404 file styling--*/
+
+#error-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+#error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+
+}
+
+#return {
+text-align: center;
+text-decoration: none;
+padding-top: 50px;
+}
+
+/*-- End of Error 404 styling section --*/
 
 @media screen and (min-width: 768px) {
 
