@@ -128,13 +128,13 @@ The arena is where the users choice and the random computer generated response w
 ### After Choice:
 ![After-Choice](/assets/images/readme-images/game-arena-result-ss.png)
 
-### Banner displayed when player wins
+### Banner displayed when player wins:
 ![You Win!](/assets/images/readme-images/banner-win-ss.png)
 
-### Banner displayed when player loses
+### Banner displayed when player loses:
 ![You Lose!](/assets/images/readme-images/banner-lose-ss.png)
 
-### Banner displayed when player draws
+### Banner displayed when player draws:
 ![Draw](/assets/images/readme-images/banner-draw-ss.png)
 
 ### Score Tally Section: 
@@ -145,14 +145,24 @@ At the very bottom of the page is a green reset div/button, that has an event li
 ![Score Section](/assets/images/readme-images/scores-reset-ss.png)
 
 
-### Round-Over Modal
+### Round-Over Modal:
 This is the modal that displays when a round is won by either the player or the computer. Depending on which player wins the round, a different message will display. 
 
-### Round-Win modal
+### Round-Win modal:
 ![Round-Win Modal](/assets/images/readme-images/win-modal.png)
 
-### Round-Lose modal
+### Round-Lose modal:
 ![Round-Lose Modal](/assets/images/readme-images/lose-modal.png)
+
+### Favicon:
+This favicon of a fist emoji was chosen as it best suits the theme of the website and also allows users to easily identify the wesbsite if they have mulitple tabs open.
+![Favicon](/assets/images/readme-images/favicon-ss.png)
+
+### Error 404 message:
+
+I made a very basic custom error 404 page that will direct the user back to the main page. It isn't complicated and is kept very simple to simply guide the user back to the right page. 
+
+![Error 404!](/assets/images/readme-images/error404-ss.png)
 
 ---
 ## Other features to implement
@@ -289,10 +299,8 @@ Testing the reset button at the bottom of the game page:
 Testing the Error 404 for the website:
 
 - Function: To display when an invalid entry on the website is requested. Display an option to return to the start page as well.
-- Check Result:
-- Issues:
-
-
+- Check Result: Error 404 page displays if you search for a page on the site that doesn't exist. The button that redirects you back to the start page works perfectly as well.
+- Issues: None. 
 
 
 ### Validation:
@@ -324,11 +332,40 @@ I put the debugger to good use when trying to see why my modals weren't being ta
 
 Early on, the win/lose/draw banner wasn't displaying as I had intended through my css styling. I found out it was because I needed to set the style.display to 'block' in my js file for it to be interpretted as I wanted it to. 
 
+When I moved my 404 files in to their own dedicated folder, my 404 file stopped loaded when I tested it and defaulted back to the standard github 404 error. 
+I moved the 404 files back in to main section of the directory and this seemed to rectify the issue. 
+
 ---
 ## Peer reviews
 
 ---
 ## Deployment
+Below are the steps to take to deploy this website:
+
+Rock Paper Scissors! is deployed on Github (the cloud-based service that is hosting my repository). Follow the steps below to deploy a Github Repository through GitHub pages:
+
+1. Select the repository that you want to deploy, and select the settings link at the top right of the menu bar (A 'cog' icon will show near it).
+2. Select the pages section on the vertical navigation bar on the left.
+3. On the Github pages tab, scroll to the Source area and change the "None" branch tab to "Main", followed by changing the folder selector to "Root".
+4. Finally, save this setting and refresh the site until you are presented with the following message in green: "Your site is published at (Your Github web address)"
+
+### Forking your Repository
+You can fork your repository to create an exact copy of the original one. This allows you to make changes without altering the original repository. 
+Take the steps below:
+
+1. Find and select your chosen repository.
+2. At the top right of the page, between the watch/unwatch tab and the star tab, select the "Fork" tab.
+3. You should now see a copy of the same repository in your account.
+
+### Cloning a Repository
+How to make a local clone repository:
+
+1. Find and select the chosen repository.
+2. Click on the "Code" button above the displayed repository files.
+3. Select and Copy the displayed link.
+4. In Gitpod, change the directory to your desired location.
+5. Type "git clone" in the terminal and paste the link, followed by pressing Enter on your keyboard. You have successfully created a clone for local use!
+
 
 ---
 ## Credits
