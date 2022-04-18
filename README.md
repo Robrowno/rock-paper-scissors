@@ -324,19 +324,27 @@ No warnings or errors.
 ## Bugs and Issues
 I had several issues with this project. And thanks to some keen-eyed people who helped me troubleshoot and gave me a walkthrough on debugging, I was able to get past them. 
 
-The first issue I had was that when I was trying to create a function for getting a result back from the computer, I was always getting a draw when I console.log'd the result. Turned out I wasn't specific enough in my targeting. I needed to use ".innerHTML" sooner than I thought in my code as before I found that out it was targetting a whole div. 
+- The first issue I had was that when I was trying to create a function for getting a result back from the computer, I was always getting a draw when I console.log'd the result. Turned out I wasn't specific enough in my targeting. I needed to use ".innerHTML" sooner than I thought in my code as before I found that out it was targetting a whole div. 
 
-I also had issues with getting the username to display correctly when entered in the input field. It was pointed out to me that I should use ".value" in my code and "||" to default back to the standard 'User' placeholder if nothing is written in the input field. 
+- I also had issues with getting the username to display correctly when entered in the input field. It was pointed out to me that I should use ".value" in my code and "||" to default back to the standard 'User' placeholder if nothing is written in the input field. 
 
-I put the debugger to good use when trying to see why my modals weren't being targetted as expected. Through getting to 10 points in-game and setting break points on the correct lines of code, I was able to work out why some elements weren't being targetted correctly and work on fixing it. I was suggested the idea of making the modal-outer transparent as a way to get around the issue of not being able to find a reliable way to 'stop' the game whilst the modal appears. 
+- I put the debugger to good use when trying to see why my modals weren't being targetted as expected. Through getting to 10 points in-game and setting break points on the correct lines of code, I was able to work out why some elements weren't being targetted correctly and work on fixing it. I was suggested the idea of making the modal-outer transparent as a way to get around the issue of not being able to find a reliable way to 'stop' the game whilst the modal appears. 
 
-Early on, the win/lose/draw banner wasn't displaying as I had intended through my css styling. I found out it was because I needed to set the style.display to 'block' in my js file for it to be interpretted as I wanted it to. 
+- Early on, the win/lose/draw banner wasn't displaying as I had intended through my css styling. I found out it was because I needed to set the style.display to 'block' in my js file for it to be interpretted as I wanted it to. 
 
-When I moved my 404 files in to their own dedicated folder, my 404 file stopped loaded when I tested it and defaulted back to the standard github 404 error. 
+- When I moved my 404 files in to their own dedicated folder, my 404 file stopped loaded when I tested it and defaulted back to the standard github 404 error. 
 I moved the 404 files back in to main section of the directory and this seemed to rectify the issue. 
+
+- In my README file, the live link to my website didn't seem to be working at first, despite the url being correct. This was pointed out to me by user Rhiannon McNulty on Slack. I tried putting "https://" before the url link to see if that made a difference and it did!
 
 ---
 ## Peer reviews
+
+For peer review, I firstly submitted my project to the peer-code-review channel on the C.I Slack community room. I had some good feedback about the running of the game, only some style change advice to take onboard and a keen user who save my live link wasn't working properly. 
+
+I also sent a live link to a few good friends on Slack who kindly took the time to check out the game and give feedback. Same as above, everything worked great with them but they recommended some style changes. 
+
+Finally, I submitted my project to a London-based code institute community whatsapp group for review and advice from them. 
 
 ---
 ## Deployment
