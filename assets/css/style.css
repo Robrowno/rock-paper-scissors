@@ -69,7 +69,7 @@ h1 {
     text-align: center;
     margin: 0 auto;
     padding-top: 1%;
-    font-size: calc(26px + (32 - 26) * ((100vw - 300px) / (1440 - 300)));
+    font-size: calc(26px + (33 - 26) * ((100vw - 300px) / (1440 - 300)));
 }
 
 /*-- General Block styling */
@@ -83,7 +83,7 @@ h1 {
 /*-- "Choose Your Weapon!" Subheading */
 .subheading {
     text-align: center;
-    font-size: calc(22px + (32 - 22) * ((100vw - 300px) / (1440 - 300)));
+    font-size: calc(22px + (30 - 22) * ((100vw - 300px) / (1440 - 300)));
 }
 
 /*-- General Block styling expanded--*/

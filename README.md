@@ -9,7 +9,7 @@ This game is designed to be played by someone who wants to play a game but doesn
 
 The goal of this website, beyond testing my Javascript abilities, is to make a well-tested and fully functioning basic game that combines functionality with clean design and colours. 
 
-[Live Link here](robrowno.github.io/rock-paper-scissors/)
+[Live Link here](https://robrowno.github.io/rock-paper-scissors/)
 
 ---
 ## Website across different platforms
