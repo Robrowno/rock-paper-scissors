@@ -45,11 +45,14 @@ I first went about creating a wireframe for how I wanted my starting page to loo
 
 ![Game page wireframe](assets/images/readme-images/game-wireframe.png)
 
+There is a key difference from the wireframe to the final product: I moved the scoring layout around from the original. 
+I solely made this decision for an aesthetic reason. I felt it looked more pleasing to the eye. 
+
 ---
 ## UX Description
 
 For this game, bright and bold colours were a must. However, I wanted to make sure that they kept the player's focus and didn't distract from the objective of the game!
-I featured the follwing:
+I featured the following:
 
 Colours:
 
@@ -114,13 +117,14 @@ This is the full page on mobile:
 ### Choices Bar
 
 The game features a choices bar with 3 options to select. Rock (Fist emoji 🤜), Paper (Open hand emoji ✋) and Scissors (Peace sign emoji ✌️). There is an event listener on each choice that will listen for a click and replicate in the arena section. 
+I designed this to be as simple and intuitive as possible, so that the player can clearly see where each choice is in seperate boxes and has a clear view of where each option is. 
 Above the choices bar is the title, which when clicked on, takes the user back to the start page. There is a reminder of this on the start page as well. 
 
 ![Choices](/assets/images/readme-images/choices-ss.png)
 
 ### Game Arena
 
-The arena is where the users choice and the random computer generated response will show. The user choice will show on the left and the computer choice on the right.
+The arena is where the users choice and the random computer generated response will show. The user choice will show on the left and the computer choice on the right. Hence, the player name always shows on the left. The layout is designed so that it's clear to the use that the left side is for them, and the right side is for the computer. 
 
 ### Before choice:
 ![Before-Choice](/assets/images/readme-images/game-arena-ss.png)
@@ -142,11 +146,13 @@ This section displays the user and computer in a bar with the match score in bet
 
 At the very bottom of the page is a green reset div/button, that has an event listener that when clicked on, will reset all the scores (match and round) to 0 to start the game over again from thew beginning. 
 
+For aesthetic and focal reasons, I put the match score between the player and user names ands the round score below. It takes inspiration from live tennis matches, by keeping the current score constantly at the 'front' or top and the rounds below. It assists in better keeping track of the score.
+
 ![Score Section](/assets/images/readme-images/scores-reset-ss.png)
 
 
 ### Round-Over Modal:
-This is the modal that displays when a round is won by either the player or the computer. Depending on which player wins the round, a different message will display. 
+This is the modal that displays when a round is won by either the player or the computer. Depending on which player wins the round, a different message will display. I've kept this message as simple as possible, so the player can quickly make a decision on whether they want to play another round or not. A hidden div makes it so the user cannot click on any of the game choices whilst the modal is up, to encourage a decision. 
 
 ### Round-Win modal:
 ![Round-Win Modal](/assets/images/readme-images/win-modal.png)
@@ -182,7 +188,7 @@ Given more time to invest in the project, I would likely aim to implement the fo
 
 ### Responsiveness Testing (Multi-Platform)
 
-I began this project with a mobile first approach, with the goal of having a website that works fluently between a minimum width of 320px (such as a small mobile device) up to 1440px wide (such as a large laptop).
+I began this project with a mobile first approach, with the goal of having a website that works fluently between a minimum width of 320px (such as a small mobile device) up to 3200px wide (such as a large laptop).
 
 In order to do this, I tested my application on the following devices:
 - Iphone 6s
@@ -344,7 +350,7 @@ For peer review, I firstly submitted my project to the peer-code-review channel 
 
 I also sent a live link to a few good friends on Slack who kindly took the time to check out the game and give feedback. Same as above, everything worked great with them but they recommended some style changes. 
 
-Finally, I submitted my project to a London-based code institute community whatsapp group for review and advice from them. 
+Finally, I submitted my project to a London-based code institute community whatsapp group for review and advice from them. They were impressed with the functionality of my website, and made suggestions on design and potential further implementations. 
 
 ---
 ## Deployment
