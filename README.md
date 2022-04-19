@@ -99,6 +99,7 @@ Layout:
 ## Website features
 
 ### Start-Page
+
 An essential task for this website was to have to responsive displays that change upon clicking a button/div when the player is ready to play. 
 
 By hiding the main page through surrounding it in a div in my html file, I was able to make this start page show by default and then hide that page when the player clicks 'start'. 
@@ -144,7 +145,7 @@ The arena is where the users choice and the random computer generated response w
 ### Score Tally Section: 
 This section displays the user and computer in a bar with the match score in between, and the round score below that. The match score will increment as the game goes on until one of the players reaches 10. At which point, the round tally will go up by one and reset the match scores back to 0 to play another round. 
 
-At the very bottom of the page is a green reset div/button, that has an event listener that when clicked on, will reset all the scores (match and round) to 0 to start the game over again from thew beginning. 
+At the very bottom of the page is a green reset div/button, that has an event listener that when clicked on, will reset all the scores (match and round) to 0 to start the game over again from the beginning. It's styled the same way as the start button, giving a clear instruction to the player of what the button does.
 
 For aesthetic and focal reasons, I put the match score between the player and user names ands the round score below. It takes inspiration from live tennis matches, by keeping the current score constantly at the 'front' or top and the rounds below. It assists in better keeping track of the score.
 
