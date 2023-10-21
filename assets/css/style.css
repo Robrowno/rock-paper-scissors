@@ -41,7 +41,11 @@ input {
     display: block;
     margin: 0 auto;
     font-size: 24px;
+    width: calc(20% - 20px);
+    text-align: center;
+    border-radius: 50px;
 }
+
 
 #start-game {
     width: 110px;
@@ -55,9 +59,13 @@ input {
     border: 1px solid black;
     color: black;
     font-size: 30px;
-    bottom: 20px;
     margin: auto;
     cursor: pointer;
+    margin-bottom: 5px;
+}
+
+#start-game:hover {
+    background-color: lightgreen;
 }
 
 /*-- This hides the page --*/
@@ -74,6 +82,43 @@ h1 {
     padding-top: 1%;
     font-size: calc(26px + (33 - 26) * ((100vw - 300px) / (1440 - 300)));
 }
+
+/* -- Link styling --*/
+
+#link {
+    text-align: center;
+    padding: 5px 10px;  
+    position: relative;    
+    transition: transform 0.3s ease, color 0.3s ease; 
+    color: #000;           
+    text-decoration: none;
+    overflow: hidden;      
+    cursor: pointer;       
+}
+
+#link:hover {
+    color: #FFF;   
+    transform: scale(1.1); 
+}
+
+#link:before {
+    content: "";           
+    position: absolute;    
+    top: 50%;              
+    left: 50%;
+    width: 0%;    
+    height: 100%;        
+    background-color: lightskyblue; 
+    transform: translateX(-50%) translateY(-50%);
+    transition: width 0.3s ease; 
+    z-index: -1;        
+}
+
+#link:hover:before {
+    width: 200%;        
+}
+/* -- End of Link styling --*/
+
 
 /*-- General Block styling */
 .content-block {
@@ -104,6 +149,10 @@ h1 {
     text-align: center;
     font-size: 2.7rem;
     cursor: pointer;
+}
+
+.item:hover {
+    background: lightskyblue;
 }
 
 /*-- Player/Computer display bar --*/
@@ -153,12 +202,12 @@ h1 {
 
 #close-modal {
     float: right;
-    font-size: 20px;
+    font-size: 26px;
     color: black;
     font-weight: bold;
     position: absolute;
-    right: 26.5%;
-    top: 40%;
+    right: 25.2%;
+    top: 40.1%;
     z-index: 10;
 }
 
@@ -166,9 +215,36 @@ h1 {
 #close-modal:hover {
     cursor: pointer;
     text-decoration: none;
+    animation: wiggle 3s linear;
 }
 
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+  
+
 /*-- End of Modal styling --*/
+
 
 /*-- 'Arena styling --*/
 .arena-block {
@@ -260,6 +336,11 @@ h1 {
     margin: auto;
     margin-top: 10px;
     cursor: pointer;
+    margin-bottom: 5px;
+}
+
+#reset:hover {
+    background-color: lightgreen;
 }
 
 /*-- This hides the Game page until called on by JS --*/
@@ -273,6 +354,7 @@ h1 {
     .vs {
         padding-top: 1.5%;
     }
+    
 }
 
 .modal-inner {
@@ -303,6 +385,12 @@ h1 {
 
 /*-- End of Error 404 styling section --*/
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    input {
+        width: 80%;
+    }
+}
+
 @media screen and (min-width: 768px) {
 
     .img {
@@ -315,6 +403,10 @@ h1 {
 
     #wl {
         padding-top: 1.5%;
+    }
+
+    input {
+        width: calc(40% - 20px);
     }
 
 }
